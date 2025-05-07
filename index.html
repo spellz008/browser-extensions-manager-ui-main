@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e9f3c315d5.js" crossorigin="anonymous"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Extensions List
+
+  All
+  Active
+  Inactive
+
+  <If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+
+  <!-- DevLens
+  Quickly inspect page layouts and visualize element boundaries.
+  Remove
+
+  StyleSpy
+  Instantly analyze and copy CSS from any webpage element.
+  Remove
+
+  SpeedBoost
+  Optimizes browser resource usage to accelerate page loading.
+  Remove
+
+  JSONWizard
+  Formats, validates, and prettifies JSON responses in-browser.
+  Remove
+
+  TabMaster Pro
+  Organizes browser tabs into groups and sessions.
+  Remove
+
+  ViewportBuddy
+  Simulates various screen resolutions directly within the browser.
+  Remove
+
+  Markup Notes
+  Enables annotation and notes directly onto webpages for collaborative debugging.
+  Remove
+
+  GridGuides
+  Overlay customizable grids and alignment guides on any webpage.
+  Remove
+
+  Palette Picker
+  Instantly extracts color palettes from any webpage.
+  Remove
+
+  LinkChecker
+  Scans and highlights broken links on any page.
+  Remove
+
+  DOM Snapshot
+  Capture and export DOM structures quickly.
+  Remove
+
+  ConsolePlus
+  Enhanced developer console with advanced filtering and logging.
+  Remove -->
+  <div class="container">
+    <div class="content">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="" />
+        <!-- <span>Extensions List</span> -->
+      </div>
+      <div class="logo-img">
+        <img src="./assets/images/icon-sun.svg" alt="" srcset="">
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-text">
+        <h2>Extensions list</h2>
+      </div>
+      <div class="section-controls">
+        <button class="all">All</button>
+        <button class="active">Active</button>
+        <button class="active">Inactive</button>
+      </div>
+    </div>
+    <div class="packs-grid">
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-devlens.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>Devlens</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-link-checker.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>Linkchecker</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-dom-snapshot.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>Dom Snapshot</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-console-plus.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>Console plus</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+         <img src="./assets/images/logo-style-spy.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>StyleSpy</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-speed-boost.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>Speedboost</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-json-wizard.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>JSONwizard</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-tab-master-pro.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>TabMaster Pro</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-viewport-buddy.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>Viewport Buddy</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-markup-notes.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>Markup Notes</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-markup-notes.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>GridGuides</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="packs">
+        <div class="item">
+          <img src="./assets/images/logo-palette-picker.svg" alt="" srcset="">
+          <div class="item-text">
+            <h3>Pallette picker</h3>
+            <p>Quickly inspect page layout and visualize element boundaries</p>
+            <div class="controls">
+              <button class="remove">Remove</button>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> 
+</body>
+</html>

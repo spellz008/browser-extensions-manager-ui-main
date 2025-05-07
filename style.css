@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(227, 75%, 14%);
+    font-family: "Noto Sans", sans-serif;
+}
+.container{
+    padding:0.5rem;
+}
+.content{
+    display:flex;
+    justify-content: space-between;
+    padding-top:1rem;
+    background-color: hsl(225, 23%, 24%);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius:1rem;
+    margin-top: 1rem;
+}
+.logo img{
+    width:8rem;
+}
+.logo-img img{
+    background-color: hsl(226, 11%, 37%);
+    width:2rem;
+    padding: 0.2rem;
+    border-radius: 0.7rem;
+}
+.section-text h2{
+    color:white;
+    font-size:2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom:0.4rem;
+   
+}
+.section-controls{
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+.all{
+    border:none;
+    background-color: hsl(3, 77%, 44%);
+    padding:0.3rem 0.9rem;
+    border-radius: 0.8rem;
+}
+.active{
+    border:none;
+    background-color: hsl(226, 11%, 37%);
+    padding:0.3rem 0.9rem;
+    border-radius: 0.8rem;
+
+}
+@media(min-width:1024px){
+    .section{
+        display:flex;
+        justify-content: space-between;
+    }
+    .section-controls{
+        margin-top: 1rem;
+        margin-right: 12.3rem;
+    }
+    .content{
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+    .section-text h2{
+        margin-left:12rem;
+    }
+    
+    
+}
+.item{
+    display:flex;
+    gap:1rem;
+    background-color:hsl(225, 23%, 24%);
+    padding: 0.5rem;
+    margin-top: 1.3rem;
+    border-radius: 0.9rem;
+   }
+   .item-text h3{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:0.3rem;
+    color:white;
+   }
+   .item-text p{
+    margin-bottom: 1rem;
+    color:hsl(217, 61%, 90%);
+    font-size: 0.9rem;
+
+   }
+   .controls{
+    justify-content: space-between;
+    display: flex;
+   }
+   .item img{
+    position: relative;
+    bottom:1.3rem;
+    min-width: 3rem;
+
+   }
+   .remove{
+      background-color:rgb(45, 45, 46) ;
+      border: 1px solid white ;
+      opacity: 0.3;
+      color:white;
+      padding: 0.3rem 0.6rem;
+      border-radius: 1rem;
+   }
+   .packs-grid{
+    display:flex;
+    gap:1rem;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width:948px;
+   }
+   .packs{
+    flex-basis:300px;
+   }
